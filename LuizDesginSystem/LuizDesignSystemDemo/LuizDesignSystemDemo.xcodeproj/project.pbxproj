@@ -13,6 +13,7 @@
 		56D328A229A0236F00E284CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D328A029A0236F00E284CB /* Main.storyboard */; };
 		56D328A429A0237100E284CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D328A329A0237100E284CB /* Assets.xcassets */; };
 		56D328A729A0237100E284CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D328A529A0237100E284CB /* LaunchScreen.storyboard */; };
+		56D328B229A0240F00E284CB /* LuizDesginSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 56D328B129A0240F00E284CB /* LuizDesginSystem */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		56D328A329A0237100E284CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56D328A629A0237100E284CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56D328A829A0237100E284CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56D328AF29A023ED00E284CB /* LuizDesginSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = LuizDesginSystem; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56D328B229A0240F00E284CB /* LuizDesginSystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +43,10 @@
 		56D3288E29A0236F00E284CB = {
 			isa = PBXGroup;
 			children = (
+				56D328AE29A023ED00E284CB /* Packages */,
 				56D3289929A0236F00E284CB /* LuizDesignSystemDemo */,
 				56D3289829A0236F00E284CB /* Products */,
+				56D328B029A0240F00E284CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +72,21 @@
 			path = LuizDesignSystemDemo;
 			sourceTree = "<group>";
 		};
+		56D328AE29A023ED00E284CB /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				56D328AF29A023ED00E284CB /* LuizDesginSystem */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		56D328B029A0240F00E284CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +103,9 @@
 			dependencies = (
 			);
 			name = LuizDesignSystemDemo;
+			packageProductDependencies = (
+				56D328B129A0240F00E284CB /* LuizDesginSystem */,
+			);
 			productName = LuizDesignSystemDemo;
 			productReference = 56D3289729A0236F00E284CB /* LuizDesignSystemDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -358,6 +381,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		56D328B129A0240F00E284CB /* LuizDesginSystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LuizDesginSystem;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 56D3288F29A0236F00E284CB /* Project object */;
 }
