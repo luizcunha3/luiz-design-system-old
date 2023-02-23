@@ -1,1 +1,3 @@
-# luiz-design-system
+# LuizDesginSystem
+
+A description of this package.
