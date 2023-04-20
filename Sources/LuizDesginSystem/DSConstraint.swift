@@ -216,6 +216,14 @@ public class DSConstraint {
         return updatedConstraintIfNeeded(constraint: constraint, offSet: CGFloat(size))
     }
     
+    @discardableResult
+    public func verticalCenter(view: UIView,
+                               relation: NSLayoutConstraintType = .equal,
+                               attribute: NSLayoutConstraint.Attribute = .centerY,
+                               offSet: CGFloat = 0) -> NSLayoutConstraint {
+        
+    }
+    
     private func updatedConstraintIfNeeded(constraint: NSLayoutConstraint, offSet: CGFloat) -> NSLayoutConstraint {
         if updatingMode, let similarConstraint = getSimilarConstraint(to: constraint) {
             similarConstraint.constant = offSet

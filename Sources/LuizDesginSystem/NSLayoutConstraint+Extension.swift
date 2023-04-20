@@ -180,13 +180,14 @@ public extension NSLayoutConstraint {
     
     static func centerY(firstView: UIView,
                         secondView: UIView,
+                        attribute: NSLayoutConstraint.Attribute = .centerY
                         relation: NSLayoutConstraintType = .equal,
                         constant: CGFloat) -> NSLayoutConstraint {
         return NSLayoutConstraint(item: firstView,
                                   attribute: NSLayoutConstraint.Attribute.centerY,
                                   relatedBy: relation.get(),
                                   toItem: secondView,
-                                  attribute: NSLayoutConstraint.Attribute.centerY,
+                                  attribute: attribute,
                                   multiplier: 1,
                                   constant: CGFloat(constant))
     }
